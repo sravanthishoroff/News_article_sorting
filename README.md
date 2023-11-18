@@ -1,17 +1,14 @@
 # News_article_sorting
-
-# Back-order Prediction
-
-Backorders are unavoidable, but by anticipating which things will be backordered,
-planning can be streamlined at several levels, preventing unexpected strain on production, 
-logistics, and transportation. ERP systems generate a lot of data (mainly structured) 
-and also contain a lot of historical data; if this data can be properly utilized,
-a predictive model to forecast backorders and plan accordingly can be constructed. 
-Based on past data from inventories, supply chain, and sales, classify the products 
-as going into backorder (Yes or No). A hypothetical manufacturer has a data set that
-identifies whether or not a backorder has occurred. The challenge is to accurately
-predict future backorder risk using predictive analytics and machine learning and 
-then to identify the optimal strategy for inventorying products with high backorder risk.
+In today’s world, data is power. With News companies having terabytes of data stored in
+servers, everyone is in the quest to discover insights that add value to the organization.
+With various examples to quote in which analytics is being used to drive actions, one that
+stands out is news article classification.
+Nowadays on the Internet there are a lot of sources that generate immense amounts of
+daily news. In addition, the demand for information by users has been growing
+continuously, so it is crucial that the news is classified to allow users to access the
+information of interest quickly and effectively. This way, the machine learning model for
+automated news classification could be used to identify topics of untracked news and/or
+make individual suggestions based on the user’s prior interests.
 
 ## Table Content ✏️
 
@@ -24,9 +21,7 @@ then to identify the optimal strategy for inventorying products with high backor
  - Directory Tree
  - Technology Used
  - Bug/Feature Request
- - Future scope of project
- 
-  
+ - Future scope of project  
 
 
 ## Demo ✔️
@@ -35,24 +30,19 @@ Heroku:- https://newbackorder.herokuapp.com/
 
 AWS- Elastic Beanstalk:- http://backorder-env.eba-kr5v6w2h.us-east-1.elasticbeanstalk.com/ ("available for 4 hours only")
 
-
-  
 ## Overview 📜
-
-This is a Flask web app which predicts the count of the bikes available based on the user's input in which there are several 
-categories to fill in like the national inventory,lead time,sales month,pieces past due,perfect 6 month average and other things by which
-model will predict whether that particular order will be returned or not for that particular input and conditions.Data which user enters will 
-be stored in DynamoDB for the future use,logging is done at every step.
-
+This Flask web app gives us the category of the data which you have provided to the model in the input text box in the application. Which eventually summarises and 
+extract keen information and convert them into vectors and gives us the exact category it belongs to for example whether it may be finance, sports or business and 
+so on.
 
 ## DataSet 📊
 
-To Know more about data and its characterstics you can download dataset form https://github.com/rodrigosantis1/backorder_prediction/blob/master/dataset.rar
+To Know more about data and its characterstics you can download dataset from https://www.kaggle.com/competitions/learn-ai-bbc/data
 
   
 ## Installation 🗄️
 
-The Code is written in Python 3.8 If you don't have Python installed you can find it [here](https://www.python.org/downloads/). 
+The Code is written in Python 3.9 If you don't have Python installed you can find it [here](https://www.python.org/downloads/). 
 If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. 
 To install the required packages and libraries, run this command in the project directory after 
 [cloning](https://github.com/) the repository:
@@ -76,7 +66,6 @@ I usally stop instance when it is not needed to avoid extra charge. so it may ha
 
 Our next step would be to follow the instruction given on 
 [AWS Elastic Beanstack](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) to deploy a web app.
-
 
 
 ## DataBase
@@ -105,14 +94,11 @@ Our next step would be to follow the instruction given on
 |
 ├── README.md
 ├── application.py
-├── RF_Back_order.pkl
+├── gnb.pkl
 ├── requirements.txt
 
 
 ```
-
-
-
   
 ## Documentation
 
@@ -145,15 +131,12 @@ kindly open an [issue](https://github.com/) here by including your search query 
 
 ## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25>
 
-
-- [Priyam Trivedi](https://github.com/Priyam-Trivedi)
 - [Sravanthi Shoroff](https://github.com/sravanthishoroff)
-- [Prateek singh](https://github.com/Prat1997)
 
 ## Future Scope
 
-* Use Deeplearning Algorithms
-* Optimize Flask application.py
+* Use unsupervised and compare the results with both supervised and unsupervised learnings.
+* Optimize Flask application.py or create a streamlit app.
 * Front-End 
 
 
